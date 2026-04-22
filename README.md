@@ -5,6 +5,8 @@ A multi-agent AI system for automated governance, risk, and compliance (GRC) aud
 
 > Built by Patricia Mae — GRC Analyst | AI Governance | Risk & Compliance
 
+![ATAA Overview](screenshots/infographic_overview.png)
+
 ---
 
 ## Background
@@ -12,6 +14,26 @@ A multi-agent AI system for automated governance, risk, and compliance (GRC) aud
 During my internship at Adobe on the Customer Trust & Audit team, I worked hands-on with customer-driven cybersecurity audits — collecting and organizing evidence, supporting control assessments across multiple security domains, and building Power BI dashboards to surface audit and compliance metrics for the team and leadership. At the time, much of this work was manual and process-heavy. In that same environment, I encountered Adobe's Common Controls Framework (CCF) — an open-source GRC automation platform built by Adobe's own Tech GRC team that rationalizes 4,300+ requirements from 21 industry standards into a unified control set, with automated evidence collection, real-time operating effectiveness checks, and a microservices rules engine underneath. I remember thinking I didn't fully understand yet what GRC engineering even meant, or why engineers were embedded within a GRC team at all — let alone what was possible when you applied it at scale with automation.
 
 The scoring mechanics of ATAA trace back to my graduate capstone — an AI-Assisted GRC Decision Support Platform where I first built a deterministic weighted risk scoring model, NIST 800-53 control gap detection, and a structured audit pipeline in Python. That project taught me the mechanics. Then I connected the dots: Adobe's CCF showed me what enterprise-grade GRC automation looks like in production. My capstone showed me how to build the scoring engine. ATAA is what happened when I asked the next question — *what if instead of one platform, each function became its own intelligent agent?*
+
+---
+
+## What is an Agentic AI System?
+
+If you're new to AI agents — I was too, until recently.
+
+A traditional AI tool responds to one prompt at a time. An **agentic AI system** is different — it breaks a complex goal into subtasks, assigns each to a specialized agent, and chains their outputs together to produce a result no single model could achieve alone.
+
+Think of it like a GRC team:
+- One person tests controls
+- Another collects evidence  
+- Another analyzes gaps
+- Another writes the report
+
+Each has a specific role. Each hands off to the next. The manager (Orchestrator) makes sure nothing falls through the cracks.
+
+ATAA works exactly the same way — except each "person" is a Python agent, the handoffs are validated automatically, and the whole pipeline runs in under 60 seconds.
+
+> *Two weeks before building this, I was intimidated by the concept of AI agents. Then I attended BSides San Diego and heard how Meta, and companies across every industry, are already deploying agentic systems at scale. The message was clear: AI isn't replacing people who understand it — it's replacing people who don't. So I built one.*
 
 ---
 
@@ -32,6 +54,8 @@ Each agent has a single responsibility — keeping the system modular, testable,
 - **Deterministic scoring** for control assessment (auditable, reproducible)
 - **Claude API** for remediation recommendations and questionnaire drafting (efficient, natural language)
 - **Human-in-the-loop** review required before any AI-drafted content is sent externally
+
+![ATAA Architecture](screenshots/infographic_architecture.png)
 
 ---
 
@@ -193,8 +217,12 @@ This mirrors how Big 4 auditors (Deloitte, PwC, KPMG) assess controls and aligns
 
 ## Roadmap
 
-- [ ] Question Extractor agent — parse questionnaires from PDF/Excel/email automatically
-- [ ] Real GRC platform integration (Vanta, Drata API)
+- [ ] Document Parser Agent — auto-extract questions from PDF, Excel, and email formats
+- [ ] Vendor Risk Agent — third-party risk scoring pipeline
+- [ ] KRI Monitoring Agent — real-time key risk indicator tracking
+- [ ] Policy Review Agent — automated policy staleness detection
+- [ ] Trend Analysis — maturity score tracking across audit runs
+- [ ] GRC Platform Integration — Vanta, Drata API connectors
 - [ ] Scheduled audit runs with trend tracking
 - [ ] Export audit reports to PDF
 - [ ] SOC 2 evidence package generator
