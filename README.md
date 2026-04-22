@@ -7,23 +7,11 @@ A multi-agent AI system for automated governance, risk, and compliance (GRC) aud
 
 ---
 
-## Screenshots
+## Background
 
-### Full Audit Pipeline
-![Pipeline Output](screenshots/01_pipeline_output.png)
+During my internship at Adobe on the Customer Trust & Audit team, I worked hands-on with customer-driven cybersecurity audits — collecting and organizing evidence, supporting control assessments across multiple security domains, and building Power BI dashboards to surface audit and compliance metrics for the team and leadership. At the time, much of this work was manual and process-heavy. In that same environment, I encountered Adobe's Common Controls Framework (CCF) — an open-source GRC automation platform built by Adobe's own Tech GRC team that rationalizes 4,300+ requirements from 21 industry standards into a unified control set, with automated evidence collection, real-time operating effectiveness checks, and a microservices rules engine underneath. I remember thinking I didn't fully understand yet what GRC engineering even meant, or why engineers were embedded within a GRC team at all — let alone what was possible when you applied it at scale with automation.
 
-### User Access Review Findings
-![UAR Findings](screenshots/02a_uar_findings.png)
-![UAR Summary](screenshots/02b_uar_summary.png)
-
-### AI-Drafted Customer Security Questionnaire
-![Questionnaire](screenshots/03_questionnaire_response.png)
-
-### Live Audit Dashboard
-![Dashboard Overview](screenshots/04_dashboard_overview.png)
-
-### Gap Analysis with AI Remediation
-![Gaps](screenshots/05_dashboard_gaps.png)
+The scoring mechanics of ATAA trace back to my graduate capstone — an AI-Assisted GRC Decision Support Platform where I first built a deterministic weighted risk scoring model, NIST 800-53 control gap detection, and a structured audit pipeline in Python. That project taught me the mechanics. Then I connected the dots: Adobe's CCF showed me what enterprise-grade GRC automation looks like in production. My capstone showed me how to build the scoring engine. ATAA is what happened when I asked the next question — *what if instead of one platform, each function became its own intelligent agent?*
 
 ---
 
@@ -78,8 +66,31 @@ Drafts professional answers to customer security questionnaires using your evide
 **Immutable Audit Log**
 Every agent action is recorded in a hash-chained append-only log. Any tampering breaks the chain — verifiable with `python main.py --verify-log`.
 
+**GRC Engineering**
+Implements the core principles of GRC engineering: automated control testing, rules-based evidence validation, and real-time compliance visibility — inspired by enterprise frameworks like Adobe CCF.
+
 **Live React Dashboard**
 Interactive dashboard with Framework Maturity Radar, Risk Score bar chart, UAR findings table, expandable gap cards with AI remediation, and strategic recommendations.
+
+---
+
+## Screenshots
+
+### Full Audit Pipeline
+![Pipeline Output](screenshots/01_pipeline_output.png)
+
+### User Access Review Findings
+![UAR Findings](screenshots/02a_uar_findings.png)
+![UAR Summary](screenshots/02b_uar_summary.png)
+
+### AI-Drafted Customer Security Questionnaire
+![Questionnaire](screenshots/03_questionnaire_response.png)
+
+### Live Audit Dashboard
+![Dashboard Overview](screenshots/04_dashboard_overview.png)
+
+### Gap Analysis with AI Remediation
+![Gaps](screenshots/05_dashboard_gaps.png)
 
 ---
 
@@ -190,7 +201,7 @@ This mirrors how Big 4 auditors (Deloitte, PwC, KPMG) assess controls and aligns
 
 ---
 
-## About
+## 👩About
 
 Built as a portfolio project to demonstrate AI-native GRC capabilities combining:
 - Deep GRC domain knowledge (NIST 800-53, AI RMF, ISO 42001, SOC 2)
@@ -198,4 +209,4 @@ Built as a portfolio project to demonstrate AI-native GRC capabilities combining
 - Deterministic risk scoring with LLM augmentation
 - Production-grade software patterns (schema validation, immutable audit logs, human-in-the-loop)
 
-**Connect:** [LinkedIn](https://linkedin.com/in/patriciamaesantos  ) | [GitHub](https://github.com/PatitaMae)
+**Connect:** [LinkedIn](https://linkedin.com/in/patriciamaesantos) | [GitHub](https://github.com/PatitaMae)
