@@ -1,0 +1,426 @@
+[
+  {
+    "risk_id": "R-001",
+    "asset_id": "A-001",
+    "threat_event": "Web application exploitation",
+    "vulnerability": "Weak input validation",
+    "impact": "Data exposure",
+    "threat_score": 4,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "SI-10"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [
+      "SC-7"
+    ],
+    "proposed_controls": "Strengthen input validation, WAF tuning",
+    "owner": "App Sec"
+  },
+  {
+    "risk_id": "R-002",
+    "asset_id": "A-002",
+    "threat_event": "API abuse / injection",
+    "vulnerability": "Lack of rate limiting",
+    "impact": "Service disruption",
+    "threat_score": 4,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "SI-10",
+      "SC-7"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Add throttling, validation",
+    "owner": "Platform"
+  },
+  {
+    "risk_id": "R-003",
+    "asset_id": "A-003",
+    "threat_event": "Credential compromise",
+    "vulnerability": "Weak MFA enforcement",
+    "impact": "Unauthorized access",
+    "threat_score": 5,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "IA-2"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [
+      "AU-2",
+      "SI-4"
+    ],
+    "proposed_controls": "Enforce MFA for all users",
+    "owner": "Security"
+  },
+  {
+    "risk_id": "R-004",
+    "asset_id": "A-003",
+    "threat_event": "Session hijacking",
+    "vulnerability": "Weak session controls",
+    "impact": "Account takeover",
+    "threat_score": 4,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "IA-2"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Harden session policies",
+    "owner": "Security"
+  },
+  {
+    "risk_id": "R-005",
+    "asset_id": "A-004",
+    "threat_event": "Database breach",
+    "vulnerability": "Misconfigured IAM",
+    "impact": "Customer data loss",
+    "threat_score": 5,
+    "vulnerability_score": 5,
+    "existing_control_ids": [
+      "AC-3",
+      "SC-7"
+    ],
+    "coverage": null,
+    "compensating_control_ids": [
+      "AU-2"
+    ],
+    "proposed_controls": "Enforce least privilege access",
+    "owner": "Data"
+  },
+  {
+    "risk_id": "R-006",
+    "asset_id": "A-004",
+    "threat_event": "Data exfiltration",
+    "vulnerability": "No monitoring",
+    "impact": "Data leakage",
+    "threat_score": 4,
+    "vulnerability_score": 5,
+    "existing_control_ids": [
+      "AU-2"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Implement data access monitoring",
+    "owner": "Data"
+  },
+  {
+    "risk_id": "R-007",
+    "asset_id": "A-007",
+    "threat_event": "Privilege escalation",
+    "vulnerability": "Excessive permissions",
+    "impact": "Full system takeover",
+    "threat_score": 5,
+    "vulnerability_score": 5,
+    "existing_control_ids": [
+      "AC-2",
+      "AC-6"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Enforce least privilege",
+    "owner": "Security"
+  },
+  {
+    "risk_id": "R-008",
+    "asset_id": "A-013",
+    "threat_event": "Cloud account takeover",
+    "vulnerability": "Weak IAM governance",
+    "impact": "Full cloud compromise",
+    "threat_score": 5,
+    "vulnerability_score": 5,
+    "existing_control_ids": [
+      "IA-2",
+      "AC-2"
+    ],
+    "coverage": null,
+    "compensating_control_ids": [
+      "AU-2",
+      "SI-4"
+    ],
+    "proposed_controls": "Strengthen IAM policies and logging",
+    "owner": "DevOps"
+  },
+  {
+    "risk_id": "R-009",
+    "asset_id": "A-015",
+    "threat_event": "Secrets leakage",
+    "vulnerability": "Secrets in configs",
+    "impact": "Infrastructure compromise",
+    "threat_score": 5,
+    "vulnerability_score": 5,
+    "existing_control_ids": [
+      "IA-5",
+      "SC-28"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Enforce secret rotation",
+    "owner": "Security"
+  },
+  {
+    "risk_id": "R-010",
+    "asset_id": "A-015",
+    "threat_event": "Unauthorized secret access",
+    "vulnerability": "Poor access control",
+    "impact": "Lateral movement",
+    "threat_score": 4,
+    "vulnerability_score": 5,
+    "existing_control_ids": [
+      "AC-3"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Tighten access control policies",
+    "owner": "Security"
+  },
+  {
+    "risk_id": "R-011",
+    "asset_id": "A-005",
+    "threat_event": "Data integrity issue",
+    "vulnerability": "Weak validation",
+    "impact": "Incorrect analytics",
+    "threat_score": 3,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "SI-10"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Add validation rules",
+    "owner": "Data"
+  },
+  {
+    "risk_id": "R-012",
+    "asset_id": "A-006",
+    "threat_event": "Backup failure",
+    "vulnerability": "No testing",
+    "impact": "Data loss",
+    "threat_score": 3,
+    "vulnerability_score": 5,
+    "existing_control_ids": [
+      "CP-9"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [
+      "CP-10"
+    ],
+    "proposed_controls": "Conduct regular restore testing",
+    "owner": "DevOps"
+  },
+  {
+    "risk_id": "R-013",
+    "asset_id": "A-010",
+    "threat_event": "Service disruption",
+    "vulnerability": "Resource exhaustion",
+    "impact": "Downtime",
+    "threat_score": 3,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "SC-5"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Improve scaling policies",
+    "owner": "Platform"
+  },
+  {
+    "risk_id": "R-014",
+    "asset_id": "A-011",
+    "threat_event": "Logging failure",
+    "vulnerability": "Weak protections",
+    "impact": "Missed attacks",
+    "threat_score": 3,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "AU-2"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [
+      "AU-6"
+    ],
+    "proposed_controls": "Secure log storage",
+    "owner": "DevOps"
+  },
+  {
+    "risk_id": "R-015",
+    "asset_id": "A-012",
+    "threat_event": "SIEM misconfiguration",
+    "vulnerability": "Poor alert tuning",
+    "impact": "Missed threats",
+    "threat_score": 3,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "AU-6"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Improve detection rules",
+    "owner": "Security"
+  },
+  {
+    "risk_id": "R-016",
+    "asset_id": "A-016",
+    "threat_event": "CI/CD compromise",
+    "vulnerability": "No code scanning",
+    "impact": "Supply chain attack",
+    "threat_score": 4,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "CM-3",
+      "SA-11"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [
+      "CM-6"
+    ],
+    "proposed_controls": "Add security scanning",
+    "owner": "DevOps"
+  },
+  {
+    "risk_id": "R-017",
+    "asset_id": "A-017",
+    "threat_event": "Code repository exposure",
+    "vulnerability": "Weak repo permissions",
+    "impact": "IP exposure",
+    "threat_score": 4,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "AC-6"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Restrict repository access",
+    "owner": "Engineering"
+  },
+  {
+    "risk_id": "R-018",
+    "asset_id": "A-018",
+    "threat_event": "SaaS misconfiguration",
+    "vulnerability": "Vendor misconfig",
+    "impact": "Data exposure",
+    "threat_score": 3,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "AC-3"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Conduct SaaS security review",
+    "owner": "Support"
+  },
+  {
+    "risk_id": "R-019",
+    "asset_id": "A-009",
+    "threat_event": "Insider misuse",
+    "vulnerability": "Lack of monitoring",
+    "impact": "Data misuse",
+    "threat_score": 2,
+    "vulnerability_score": 3,
+    "existing_control_ids": [
+      "AC-2"
+    ],
+    "coverage": "Full",
+    "compensating_control_ids": [],
+    "proposed_controls": "Implement monitoring controls",
+    "owner": "Ops"
+  },
+  {
+    "risk_id": "R-020",
+    "asset_id": "A-014",
+    "threat_event": "Container escape",
+    "vulnerability": "Weak isolation",
+    "impact": "Service compromise",
+    "threat_score": 3,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "SI-7"
+    ],
+    "coverage": "Full",
+    "compensating_control_ids": [],
+    "proposed_controls": "Harden container configs",
+    "owner": "Platform"
+  },
+  {
+    "risk_id": "R-021",
+    "asset_id": "A-019",
+    "threat_event": "Endpoint compromise",
+    "vulnerability": "Weak patching",
+    "impact": "Device compromise",
+    "threat_score": 3,
+    "vulnerability_score": 4,
+    "existing_control_ids": [
+      "CM-6"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Enforce patch management",
+    "owner": "IT"
+  },
+  {
+    "risk_id": "R-022",
+    "asset_id": "A-020",
+    "threat_event": "Alert fatigue",
+    "vulnerability": "Poor tuning",
+    "impact": "Missed incidents",
+    "threat_score": 2,
+    "vulnerability_score": 3,
+    "existing_control_ids": [
+      "AU-6"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Tune alert thresholds",
+    "owner": "Security"
+  },
+  {
+    "risk_id": "R-023",
+    "asset_id": "A-021",
+    "threat_event": "Dev environment misconfiguration",
+    "vulnerability": "Lack of hardening standards",
+    "impact": "Internal exposure",
+    "threat_score": 2,
+    "vulnerability_score": 3,
+    "existing_control_ids": [
+      "CM-6"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [],
+    "proposed_controls": "Enforce baseline config standards",
+    "owner": "Engineering"
+  },
+  {
+    "risk_id": "R-024",
+    "asset_id": "A-022",
+    "threat_event": "Unauthorized internal access",
+    "vulnerability": "Weak control on wiki",
+    "impact": "Internal data exposure",
+    "threat_score": 2,
+    "vulnerability_score": 2,
+    "existing_control_ids": [
+      "AC-3"
+    ],
+    "coverage": "Full",
+    "compensating_control_ids": [],
+    "proposed_controls": "Periodic access reviews",
+    "owner": "IT"
+  },
+  {
+    "risk_id": "R-025",
+    "asset_id": "A-023",
+    "threat_event": "Exploitation via outdated software",
+    "vulnerability": "Unpatched reporting tool",
+    "impact": "Limited internal exposure",
+    "threat_score": 2,
+    "vulnerability_score": 3,
+    "existing_control_ids": [
+      "CM-6"
+    ],
+    "coverage": "Partial",
+    "compensating_control_ids": [
+      "AU-2"
+    ],
+    "proposed_controls": "Enforce patch management",
+    "owner": "Data"
+  }
+]

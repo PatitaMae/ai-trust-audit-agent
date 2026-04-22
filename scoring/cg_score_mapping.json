@@ -1,0 +1,32 @@
+[
+  {
+    "coverage_level": "Full",
+    "compensating_controls": null,
+    "cg_score": 1,
+    "description": "All required controls effectively implemented"
+  },
+  {
+    "coverage_level": "Partial",
+    "compensating_controls": "No",
+    "cg_score": 3,
+    "description": "Some controls missing or weak; no mitigation"
+  },
+  {
+    "coverage_level": "Partial",
+    "compensating_controls": "Yes",
+    "cg_score": 2,
+    "description": "Some controls missing but partially offset"
+  },
+  {
+    "coverage_level": null,
+    "compensating_controls": "No",
+    "cg_score": 5,
+    "description": "Critical controls absent; no mitigation"
+  },
+  {
+    "coverage_level": null,
+    "compensating_controls": "Yes",
+    "cg_score": 4,
+    "description": "Critical controls absent but partially offset"
+  }
+]

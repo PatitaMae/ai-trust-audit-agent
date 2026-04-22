@@ -1,0 +1,142 @@
+[
+  {
+    "control_id": "AC-2",
+    "control_name": "Account Management",
+    "recommendation": "Implement automated account provisioning and deprovisioning workflows, enforce periodic access reviews, and disable inactive accounts"
+  },
+  {
+    "control_id": "AC-3",
+    "control_name": "Access Enforcement",
+    "recommendation": "Enforce role-based access control (RBAC) policies and restrict unauthorized access to sensitive systems and data"
+  },
+  {
+    "control_id": "AC-4",
+    "control_name": "Information Flow Enforcement",
+    "recommendation": "Enforce information flow control policies to restrict unauthorized data transfers between systems and network boundaries"
+  },
+  {
+    "control_id": "AC-6",
+    "control_name": "Least Privilege",
+    "recommendation": "Apply least privilege principles by removing excessive permissions and regularly reviewing privileged access roles"
+  },
+  {
+    "control_id": "AU-12",
+    "control_name": "Audit Record Generation",
+    "recommendation": "Ensure systems generate sufficient audit records for all critical events, including authentication and data access"
+  },
+  {
+    "control_id": "AU-2",
+    "control_name": "Audit Logging",
+    "recommendation": "Enable centralized logging of system and user activity, ensuring logs capture authentication, access, and administrative actions"
+  },
+  {
+    "control_id": "AU-6",
+    "control_name": "Log Review",
+    "recommendation": "Implement continuous monitoring and alerting for suspicious activity, and regularly review logs for anomalies"
+  },
+  {
+    "control_id": "CM-3",
+    "control_name": "Configuration Control",
+    "recommendation": "Establish controlled change management processes, including approval workflows and change tracking"
+  },
+  {
+    "control_id": "CM-6",
+    "control_name": "Configuration Settings",
+    "recommendation": "Enforce secure baseline configurations, automate patch management, and continuously monitor configuration drift"
+  },
+  {
+    "control_id": "CM-7",
+    "control_name": "Least Functionality",
+    "recommendation": "Disable unnecessary services and ports to reduce system attack surface"
+  },
+  {
+    "control_id": "CP-10",
+    "control_name": "System Recovery",
+    "recommendation": "Establish system recovery procedures to restore operations after failures or incidents"
+  },
+  {
+    "control_id": "CP-9",
+    "control_name": "Backup & Recovery",
+    "recommendation": "Perform regular backups, validate backup integrity, and conduct periodic restoration testing"
+  },
+  {
+    "control_id": "IA-2",
+    "control_name": "Multi-Factor Authentication",
+    "recommendation": "Require MFA for all users, enforce phishing-resistant authentication for privileged accounts, and integrate conditional access policies"
+  },
+  {
+    "control_id": "IA-5",
+    "control_name": "Credential Management",
+    "recommendation": "Secure credential storage using vaults, enforce strong password policies, and implement periodic credential rotation"
+  },
+  {
+    "control_id": "IR-4",
+    "control_name": "Incident Handling",
+    "recommendation": "Establish incident response procedures, including detection, containment, eradication, and recovery processes"
+  },
+  {
+    "control_id": "IR-6",
+    "control_name": "Incident Reporting",
+    "recommendation": "Implement mechanisms for timely reporting and escalation of security incidents"
+  },
+  {
+    "control_id": "SA-11",
+    "control_name": "Secure Development",
+    "recommendation": "Integrate static and dynamic security testing into CI/CD pipelines and enforce secure coding practices"
+  },
+  {
+    "control_id": "SA-12",
+    "control_name": "Supply Chain Protection",
+    "recommendation": "Validate third-party components, enforce code integrity checks, and monitor dependencies for vulnerabilities"
+  },
+  {
+    "control_id": "SC-23",
+    "control_name": "Session Authenticity",
+    "recommendation": "Protect session integrity by enforcing secure session tokens, implementing session timeouts, and preventing session fixation attacks"
+  },
+  {
+    "control_id": "SC-28",
+    "control_name": "Data Protection",
+    "recommendation": "Encrypt sensitive data at rest, enforce secure storage practices, and manage encryption keys securely"
+  },
+  {
+    "control_id": "SC-5",
+    "control_name": "Denial of Service Protection",
+    "recommendation": "Implement rate limiting, traffic filtering, and resource controls to protect systems against denial of service attacks"
+  },
+  {
+    "control_id": "SC-7",
+    "control_name": "Boundary Protection",
+    "recommendation": "Implement network segmentation, firewall rules, and secure access controls to restrict unauthorized network traffic"
+  },
+  {
+    "control_id": "SC-8",
+    "control_name": "Transmission Confidentiality",
+    "recommendation": "Encrypt data in transit using secure protocols such as TLS and enforce secure communication channels"
+  },
+  {
+    "control_id": "SI-10",
+    "control_name": "Input Validation",
+    "recommendation": "Enforce strict input validation and sanitization for all user inputs to prevent injection and application-layer attacks"
+  },
+  {
+    "control_id": "SI-11",
+    "control_name": "Error Handling",
+    "recommendation": "Implement secure error handling to prevent information disclosure through system error messages"
+  },
+  {
+    "control_id": "SI-13",
+    "control_name": "Predictable Failure Prevention",
+    "recommendation": "Implement redundancy and failover mechanisms to ensure system availability during component failures"
+  },
+  {
+    "control_id": "SI-4",
+    "control_name": "System Monitoring",
+    "recommendation": "Continuously monitor systems for anomalous behavior using detection tools and alerting mechanisms"
+  },
+  {
+    "control_id": "SI-7",
+    "control_name": "System Integrity",
+    "recommendation": "Deploy file and system integrity monitoring tools to detect unauthorized changes to critical systems"
+  }
+]

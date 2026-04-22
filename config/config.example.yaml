@@ -1,0 +1,27 @@
+anthropic:
+  api_key: "API key"
+  model: "claude-sonnet-4-20250514"
+  max_tokens: 1000
+
+audit:
+  org_name: "Acme Corp"
+  frameworks:
+    - nist_800_53
+    - nist_ai_rmf
+    - iso_42001
+    - soc2
+  human_review_threshold: 0.7   # confidence below this triggers human review
+  uar_inactive_days: 180        # days before account flagged as dormant
+  uar_review_overdue_days: 90   # days before manager review flagged overdue
+
+scoring:
+  weights:
+    likelihood: 0.4
+    impact: 0.6
+  critical_threshold: 8.0
+  high_threshold: 6.0
+  medium_threshold: 4.0
+
+output:
+  reports_dir: "./reports"
+  log_dir: "./audit_log/logs"

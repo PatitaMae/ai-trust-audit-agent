@@ -1,0 +1,72 @@
+[
+  {
+    "kri_id": "KRI-5001",
+    "metric_name": "High Risk Exposure Rate",
+    "description": "Percentage of evaluated risks classified as High or Critical",
+    "primary_source": "Risk evaluation outputs",
+    "purpose": "Shows overall exposure level"
+  },
+  {
+    "kri_id": "KRI-5002",
+    "metric_name": "Average Control Coverage Gap",
+    "description": "Average control gap score across all evaluated risks",
+    "primary_source": "Risk evaluation outputs",
+    "purpose": "Reflects control weakness across the environment"
+  },
+  {
+    "kri_id": "KRI-5003",
+    "metric_name": "Critical Asset Risk Count",
+    "description": "Number of Critical assets associated with High or Critical risks",
+    "primary_source": "Asset inventory + evaluation outputs",
+    "purpose": "Highlights concentration of risk around the most important assets"
+  },
+  {
+    "kri_id": "KRI-5004",
+    "metric_name": "Mitigation Recommendation Rate",
+    "description": "Percentage of risks for which the recommended treatment is Mitigate",
+    "primary_source": "Decision recommendation outputs",
+    "purpose": "Shows how much of the portfolio requires active remediation"
+  },
+  {
+    "kri_id": "KRI-5005",
+    "metric_name": "Open Critical Risks",
+    "description": "Number of Critical risks still in Open status",
+    "primary_source": "Risk evaluation outputs + status fields",
+    "purpose": "Tracks unresolved urgent issues"
+  },
+  {
+    "kri_id": "KRI-5006",
+    "metric_name": "Partial Control Coverage Rate",
+    "description": "Percentage of evaluated risks with Partial control coverage",
+    "primary_source": "Risk register + evaluation outputs",
+    "purpose": "Indicates how often controls exist but are not fully effective"
+  },
+  {
+    "kri_id": "KRI-5007",
+    "metric_name": "Decision Closure Rate",
+    "description": "Percentage of evaluated risks with a recorded final treatment decision",
+    "primary_source": "Decision logs",
+    "purpose": "Measures governance follow-through"
+  },
+  {
+    "kri_id": "KRI-5008",
+    "metric_name": "Logging Coverage Health",
+    "description": "Percentage of logging-related risks with adequate AU-2/AU-6 coverage",
+    "primary_source": "Risk register + control mappings",
+    "purpose": "Shows visibility and monitoring maturity"
+  },
+  {
+    "kri_id": "KRI-5009",
+    "metric_name": "Identity Protection Health",
+    "description": "Percentage of identity-related risks with adequate IA-2/AC-2 coverage",
+    "primary_source": "Risk register + control mappings",
+    "purpose": "Shows strength of authentication and account governance"
+  },
+  {
+    "kri_id": "KRI-5010",
+    "metric_name": "Recovery Readiness Rate",
+    "description": "Percentage of backup/recovery-related risks with adequate CP-9/CP-10 coverage",
+    "primary_source": "Risk register + control mappings",
+    "purpose": "Reflects resilience and recovery posture"
+  }
+]

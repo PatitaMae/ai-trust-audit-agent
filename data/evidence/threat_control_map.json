@@ -1,0 +1,202 @@
+[
+  {
+    "threat_event": "Web application exploitation",
+    "relevant_controls": [
+      "SI-10",
+      "SI-11"
+    ],
+    "control_purpose": "Input validation and error handling"
+  },
+  {
+    "threat_event": "API abuse / injection",
+    "relevant_controls": [
+      "SI-10",
+      "SC-7"
+    ],
+    "control_purpose": "Input validation and boundary protection"
+  },
+  {
+    "threat_event": "Credential compromise",
+    "relevant_controls": [
+      "IA-2",
+      "AC-2"
+    ],
+    "control_purpose": "Multi-factor authentication and account management"
+  },
+  {
+    "threat_event": "Session hijacking",
+    "relevant_controls": [
+      "IA-2",
+      "SC-23"
+    ],
+    "control_purpose": "Strong authentication and session protection"
+  },
+  {
+    "threat_event": "Database breach",
+    "relevant_controls": [
+      "AC-3",
+      "SC-7"
+    ],
+    "control_purpose": "Access enforcement and network segmentation"
+  },
+  {
+    "threat_event": "Data exfiltration",
+    "relevant_controls": [
+      "AC-4",
+      "AU-2"
+    ],
+    "control_purpose": "Data flow enforcement and logging"
+  },
+  {
+    "threat_event": "Privilege escalation",
+    "relevant_controls": [
+      "AC-2",
+      "AC-6"
+    ],
+    "control_purpose": "Account management and least privilege"
+  },
+  {
+    "threat_event": "Cloud account takeover",
+    "relevant_controls": [
+      "IA-2",
+      "AC-2"
+    ],
+    "control_purpose": "Authentication and identity governance"
+  },
+  {
+    "threat_event": "Secrets leakage",
+    "relevant_controls": [
+      "IA-5",
+      "SC-28"
+    ],
+    "control_purpose": "Credential protection and data encryption"
+  },
+  {
+    "threat_event": "CI/CD compromise",
+    "relevant_controls": [
+      "CM-3",
+      "SA-11"
+    ],
+    "control_purpose": "Configuration control and secure development"
+  },
+  {
+    "threat_event": "Code repository exposure",
+    "relevant_controls": [
+      "AC-6",
+      "IA-5"
+    ],
+    "control_purpose": "Least privilege and credential protection"
+  },
+  {
+    "threat_event": "Logging failure",
+    "relevant_controls": [
+      "AU-2",
+      "AU-6"
+    ],
+    "control_purpose": "Audit logging and log review"
+  },
+  {
+    "threat_event": "Endpoint compromise",
+    "relevant_controls": [
+      "SI-7",
+      "CM-6"
+    ],
+    "control_purpose": "System integrity and configuration management"
+  },
+  {
+    "threat_event": "Container escape",
+    "relevant_controls": [
+      "SI-7",
+      "SC-7"
+    ],
+    "control_purpose": "System integrity and isolation controls"
+  },
+  {
+    "threat_event": "SaaS misconfiguration",
+    "relevant_controls": [
+      "AC-3",
+      "IA-2"
+    ],
+    "control_purpose": "Access control and authentication enforcement"
+  },
+  {
+    "threat_event": "Backup failure",
+    "relevant_controls": [
+      "CP-9",
+      "CP-10"
+    ],
+    "control_purpose": "Backup and recovery controls"
+  },
+  {
+    "threat_event": "Insider misuse",
+    "relevant_controls": [
+      "AC-2",
+      "AU-2"
+    ],
+    "control_purpose": "Account management and audit logging"
+  },
+  {
+    "threat_event": "Dev environment misconfiguration",
+    "relevant_controls": [
+      "CM-6",
+      "CM-7"
+    ],
+    "control_purpose": "Configuration settings and least functionality"
+  },
+  {
+    "threat_event": "Exploitation via outdated software",
+    "relevant_controls": [
+      "CM-6",
+      "SI-7"
+    ],
+    "control_purpose": "Configuration management and system integrity"
+  },
+  {
+    "threat_event": "SIEM misconfiguration",
+    "relevant_controls": [
+      "AU-6",
+      "SI-4"
+    ],
+    "control_purpose": "Log review and system monitoring"
+  },
+  {
+    "threat_event": "Unauthorized secret access",
+    "relevant_controls": [
+      "AC-3",
+      "IA-5"
+    ],
+    "control_purpose": "Access enforcement and credential management"
+  },
+  {
+    "threat_event": "Data integrity issue",
+    "relevant_controls": [
+      "SI-10",
+      "AU-2"
+    ],
+    "control_purpose": "Input validation and audit logging"
+  },
+  {
+    "threat_event": "Service disruption",
+    "relevant_controls": [
+      "SC-5",
+      "SI-13"
+    ],
+    "control_purpose": "Denial of service protection and availability"
+  },
+  {
+    "threat_event": "Alert fatigue",
+    "relevant_controls": [
+      "AU-6",
+      "SI-4"
+    ],
+    "control_purpose": "Log review and system monitoring"
+  },
+  {
+    "threat_event": "Unauthorized internal access",
+    "relevant_controls": [
+      "AC-3",
+      "AC-2"
+    ],
+    "control_purpose": "Access enforcement and account management"
+  }
+]
