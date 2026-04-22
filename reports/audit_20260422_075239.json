@@ -1,0 +1,208 @@
+{
+  "org_name": "PM Security",
+  "report_type": "technical",
+  "frameworks_assessed": [
+    "nist_800_53",
+    "nist_ai_rmf",
+    "iso_42001",
+    "soc2"
+  ],
+  "overall_maturity_score": 45.3,
+  "critical_finding_count": 0,
+  "high_finding_count": 0,
+  "gap_reports": [
+    {
+      "framework": "nist_800_53",
+      "total_controls": 30,
+      "compliant": 0,
+      "partial": 0,
+      "in_development": 30,
+      "gaps": 0,
+      "critical_gaps": [],
+      "maturity_score": 50.0,
+      "assessed_at": "2026-04-22T07:51:10.874731"
+    },
+    {
+      "framework": "nist_ai_rmf",
+      "total_controls": 8,
+      "compliant": 0,
+      "partial": 0,
+      "in_development": 5,
+      "gaps": 3,
+      "critical_gaps": [],
+      "maturity_score": 31.2,
+      "assessed_at": "2026-04-22T07:51:48.115303"
+    },
+    {
+      "framework": "iso_42001",
+      "total_controls": 4,
+      "compliant": 0,
+      "partial": 0,
+      "in_development": 4,
+      "gaps": 0,
+      "critical_gaps": [],
+      "maturity_score": 50.0,
+      "assessed_at": "2026-04-22T07:52:07.724276"
+    },
+    {
+      "framework": "soc2",
+      "total_controls": 6,
+      "compliant": 0,
+      "partial": 0,
+      "in_development": 6,
+      "gaps": 0,
+      "critical_gaps": [],
+      "maturity_score": 50.0,
+      "assessed_at": "2026-04-22T07:52:33.322576"
+    }
+  ],
+  "uar_findings": [
+    {
+      "user_id": "u001",
+      "user_name": "Alice Chen",
+      "severity": "low",
+      "rule_triggered": "UAR-004",
+      "description": "Dormant account (180+ days inactive)",
+      "systems_affected": [
+        "AWS",
+        "GitHub",
+        "Jira"
+      ],
+      "recommended_action": "Disable account pending confirmation from manager.",
+      "control_ref": "AC-2"
+    },
+    {
+      "user_id": "u002",
+      "user_name": "Bob Reyes",
+      "severity": "high",
+      "rule_triggered": "UAR-002",
+      "description": "Contractor with production database access",
+      "systems_affected": [
+        "AWS",
+        "Prod-DB",
+        "GitHub"
+      ],
+      "recommended_action": "Review business justification. Apply least-privilege. Add MFA.",
+      "control_ref": "AC-6"
+    },
+    {
+      "user_id": "u002",
+      "user_name": "Bob Reyes",
+      "severity": "medium",
+      "rule_triggered": "UAR-003",
+      "description": "Manager review overdue (90+ days)",
+      "systems_affected": [
+        "AWS",
+        "Prod-DB",
+        "GitHub"
+      ],
+      "recommended_action": "Send reminder to manager. Suspend access if no response in 14 days.",
+      "control_ref": "AC-2"
+    },
+    {
+      "user_id": "u002",
+      "user_name": "Bob Reyes",
+      "severity": "low",
+      "rule_triggered": "UAR-004",
+      "description": "Dormant account (180+ days inactive)",
+      "systems_affected": [
+        "AWS",
+        "Prod-DB",
+        "GitHub"
+      ],
+      "recommended_action": "Disable account pending confirmation from manager.",
+      "control_ref": "AC-2"
+    },
+    {
+      "user_id": "u003",
+      "user_name": "Carol Smith",
+      "severity": "critical",
+      "rule_triggered": "UAR-001",
+      "description": "Terminated user with active system access",
+      "systems_affected": [
+        "Okta",
+        "Jira",
+        "Confluence"
+      ],
+      "recommended_action": "Immediately revoke all system access. Escalate to IT and HR.",
+      "control_ref": "AC-2"
+    },
+    {
+      "user_id": "u003",
+      "user_name": "Carol Smith",
+      "severity": "low",
+      "rule_triggered": "UAR-004",
+      "description": "Dormant account (180+ days inactive)",
+      "systems_affected": [
+        "Okta",
+        "Jira",
+        "Confluence"
+      ],
+      "recommended_action": "Disable account pending confirmation from manager.",
+      "control_ref": "AC-2"
+    },
+    {
+      "user_id": "u003",
+      "user_name": "Carol Smith",
+      "severity": "medium",
+      "rule_triggered": "UAR-005",
+      "description": "No manager review on record",
+      "systems_affected": [
+        "Okta",
+        "Jira",
+        "Confluence"
+      ],
+      "recommended_action": "Initiate manager review. Document outcome in GRC platform.",
+      "control_ref": "AC-2"
+    },
+    {
+      "user_id": "u004",
+      "user_name": "David Park",
+      "severity": "low",
+      "rule_triggered": "UAR-004",
+      "description": "Dormant account (180+ days inactive)",
+      "systems_affected": [
+        "AWS",
+        "Slack",
+        "Salesforce"
+      ],
+      "recommended_action": "Disable account pending confirmation from manager.",
+      "control_ref": "AC-2"
+    },
+    {
+      "user_id": "u005",
+      "user_name": "Eva Torres",
+      "severity": "low",
+      "rule_triggered": "UAR-004",
+      "description": "Dormant account (180+ days inactive)",
+      "systems_affected": [
+        "GitHub",
+        "Jira"
+      ],
+      "recommended_action": "Disable account pending confirmation from manager.",
+      "control_ref": "AC-2"
+    },
+    {
+      "user_id": "u005",
+      "user_name": "Eva Torres",
+      "severity": "medium",
+      "rule_triggered": "UAR-005",
+      "description": "No manager review on record",
+      "systems_affected": [
+        "GitHub",
+        "Jira"
+      ],
+      "recommended_action": "Initiate manager review. Document outcome in GRC platform.",
+      "control_ref": "AC-2"
+    }
+  ],
+  "recommendations": [
+    "Prioritize immediate remediation of the critical User Access Review finding by conducting an emergency access audit and revoking unauthorized or excessive privileges within 72 hours.",
+    "Address the high-severity User Access Review finding by implementing a formal quarterly access recertification process with documented sign-off from system owners and HR.",
+    "Allocate dedicated resources to close the 3 identified NIST AI RMF gaps, targeting a maturity score increase from 31.2 to at least 60.0 within the next 90 days through structured control implementation.",
+    "Establish a formal AI governance program aligned to NIST AI RMF and ISO 42001 to systematically elevate overall AI risk management maturity across all applicable business units.",
+    "Leverage the stable 50.0 maturity baselines across NIST 800-53, ISO 42001, and SOC2 as a foundation to drive continuous improvement initiatives targeting a minimum maturity score of 75.0 across all frameworks by year-end."
+  ],
+  "generated_at": "2026-04-22T07:52:39.159986",
+  "human_reviewed": false
+}
