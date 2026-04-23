@@ -216,7 +216,7 @@ This mirrors how Big 4 auditors (Deloitte, PwC, KPMG) assess controls and aligns
 ---
 
 ## Roadmap
-
+- [ ] v2.0 — Semantic Questionnaire Engine -Map questions across multiple audit formats to unified controls regardless of wording (architecture preview coming soon)
 - [ ] Document Parser Agent — auto-extract questions from PDF, Excel, and email formats
 - [ ] Vendor Risk Agent — third-party risk scoring pipeline
 - [ ] KRI Monitoring Agent — real-time key risk indicator tracking
